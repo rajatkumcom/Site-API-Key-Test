@@ -1,0 +1,7 @@
+book.admin:
+  path: '/page_json/{site_api_key}/{nid}'
+  defaults:
+    _controller: '\Drupal\site_api_key\Controller\SiteApiController::jsonOutput'
+    _title: 'Books'
+  requirements:
+    _permission: 'administer book outlines'
